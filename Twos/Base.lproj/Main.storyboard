@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Twos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAe-DY-dRP" userLabel="Blok">
+                                <rect key="frame" x="50" y="90" width="220" height="320"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ScY-9S-tmO">
+                                        <rect key="frame" x="20" y="79" width="180" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tinggi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNf-w8-ZWl">
+                                        <rect key="frame" x="20" y="129" width="180" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn8-G7-lap">
+                                        <rect key="frame" x="20" y="189" width="180" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Hitung">
+                                            <color key="titleColor" red="0.96044502200000004" green="0.96044502200000004" blue="0.96044502200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hitungClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWA-vU-o6l"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDM-q6-c43">
+                                        <rect key="frame" x="20" y="239" width="180" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luas Segitiga Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLK-B1-Jwq">
+                                        <rect key="frame" x="20" y="38" width="180" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qDM-q6-c43" firstAttribute="leading" secondItem="sAe-DY-dRP" secondAttribute="leading" constant="20" id="1Yb-gn-qYj"/>
+                                    <constraint firstAttribute="trailing" secondItem="bLK-B1-Jwq" secondAttribute="trailing" constant="20" id="7YK-42-6m7"/>
+                                    <constraint firstItem="bLK-B1-Jwq" firstAttribute="leading" secondItem="sAe-DY-dRP" secondAttribute="leading" constant="20" id="FGL-ES-Gix"/>
+                                    <constraint firstItem="qDM-q6-c43" firstAttribute="top" secondItem="dn8-G7-lap" secondAttribute="bottom" constant="20" id="I9K-uW-b7h"/>
+                                    <constraint firstItem="nNf-w8-ZWl" firstAttribute="leading" secondItem="sAe-DY-dRP" secondAttribute="leading" constant="20" id="NS3-6h-zdE"/>
+                                    <constraint firstItem="dn8-G7-lap" firstAttribute="top" secondItem="nNf-w8-ZWl" secondAttribute="bottom" constant="30" id="PNN-b9-hGo"/>
+                                    <constraint firstItem="dn8-G7-lap" firstAttribute="leading" secondItem="sAe-DY-dRP" secondAttribute="leading" constant="20" id="RGM-Tm-7J5"/>
+                                    <constraint firstItem="nNf-w8-ZWl" firstAttribute="top" secondItem="ScY-9S-tmO" secondAttribute="bottom" constant="20" id="TQh-6k-Jte"/>
+                                    <constraint firstAttribute="trailing" secondItem="nNf-w8-ZWl" secondAttribute="trailing" constant="20" id="dPj-dp-bgK"/>
+                                    <constraint firstAttribute="trailing" secondItem="dn8-G7-lap" secondAttribute="trailing" constant="20" id="eW4-0P-ip6"/>
+                                    <constraint firstAttribute="trailing" secondItem="qDM-q6-c43" secondAttribute="trailing" constant="20" id="fNr-Pj-ipV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ScY-9S-tmO" secondAttribute="trailing" constant="20" id="hQW-3e-Jnh"/>
+                                    <constraint firstItem="ScY-9S-tmO" firstAttribute="leading" secondItem="sAe-DY-dRP" secondAttribute="leading" constant="20" id="kGq-W5-xfL"/>
+                                    <constraint firstItem="bLK-B1-Jwq" firstAttribute="top" secondItem="sAe-DY-dRP" secondAttribute="top" constant="38" id="rgD-FR-n00"/>
+                                    <constraint firstItem="ScY-9S-tmO" firstAttribute="top" secondItem="bLK-B1-Jwq" secondAttribute="bottom" constant="20" id="xYo-nh-HlH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sAe-DY-dRP" secondAttribute="bottom" constant="70" id="5Ec-Mh-pf4"/>
+                            <constraint firstItem="sAe-DY-dRP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="GGB-Oj-NvJ"/>
+                            <constraint firstItem="sAe-DY-dRP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="SFN-yq-oAd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sAe-DY-dRP" secondAttribute="trailing" constant="50" id="pZY-Bb-nBp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnHitung" destination="dn8-G7-lap" id="lxT-sQ-Doe"/>
+                        <outlet property="txtHasil" destination="qDM-q6-c43" id="ale-Jp-iKn"/>
+                        <outlet property="txtTinggi" destination="nNf-w8-ZWl" id="XFj-4w-gSc"/>
+                        <outlet property="txtalas" destination="ScY-9S-tmO" id="ywn-HW-bES"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
